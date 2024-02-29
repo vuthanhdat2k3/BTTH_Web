@@ -1,3 +1,3 @@
 function goToLogin() {
-  window.location.href = "feature/login.html";
+  window.location.href = "../feature/login.html";
 }
