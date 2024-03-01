@@ -1,6 +1,5 @@
 $("#exam").hide();
 $(".result-box").hide();
-var answerN1 = ["Đúng", "Đúng", "Đúng", "Đúng", "Đúng", "Đúng", "Đúng", "Đúng", "Đúng", "Đúng"];
 function getInfoStudent() {
   var name = document.getElementById("Fullname").value;
   var id = document.getElementById("ID-student").value;
@@ -19,14 +18,27 @@ function checkAnswer(){
   var correctAnswer = 0;
   for(var i = 0 ; i < questions.length ; i++){
    var radios = questions[i].querySelectorAll('input[type="radio"]');
+   var checkbox = questions[i].querySelectorAll('input[type="checkbox"]');
    var userAnswer = null;
+   var answerN3 = [];
    for(var j = 0 ; j < radios.length ; j++){
     if(radios[j].checked){
       userAnswer = radios[j].value;
       break;
     }
    }
-   if(userAnswer === answerN1[i]) {
+   if(userAnswer === "true") {
+    correctAnswer ++;
+   }
+   for(var j = 0 ; j < checkbox.length ; j++){
+    if(checkbox[j].checked){
+      answerN3.push(checkbox[j].value);
+    }
+    else {
+      if(checkbox[j].value === "true") answerN3.push("false");
+    }
+   }
+   if(!answerN3.includes("false") && answerN3.length > 0){
     correctAnswer ++;
    }
   }

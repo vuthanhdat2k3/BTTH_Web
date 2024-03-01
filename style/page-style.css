@@ -82,15 +82,18 @@ body {
   padding-bottom: 20px;
 }
 
-.question-box .N1{
+.question-box .N1, .N2, .N3{
   margin-left: 40px;
 }
 
-.question-box .N1 input{
+.question-box input[type="radio"]{
   margin-left: 200px;
   margin-top: 20px;
 }
-
+.question-box input[type="checkbox"]{
+  margin-left: 100px;
+  margin-top: 20px;
+}
 .question-box button {
   margin-top: 100px;
   margin-left: 600px;
