@@ -41,6 +41,12 @@ function checkAnswer(){
    if(!answerN3.includes("false") && answerN3.length > 0){
     correctAnswer ++;
    }
+   if(questions[i].querySelector('textarea') !== null){
+    var text = questions[i].querySelector('textarea').value.trim();
+    if(text !== ''){
+      correctAnswer ++;
+   }
+   }
   }
   return correctAnswer;
 }

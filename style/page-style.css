@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: Arial, sans-serif;
   background-color: antiquewhite;
 }
@@ -82,7 +83,7 @@ body {
   padding-bottom: 20px;
 }
 
-.question-box .N1, .N2, .N3{
+.question-box .N1, .N2, .N3, .N4{
   margin-left: 40px;
 }
 
