@@ -2,14 +2,16 @@ $("#exam").hide();
 $(".result-box").hide();
 function getInfoStudent() {
   var name = document.getElementById("Fullname").value;
-  var id = document.getElementById("ID-student").value;
-  var classroom = document.getElementById("Classroom").value;
+  var birthday = document.getElementById("Birthday").value;
+  var CCCD = document.getElementById("ID").value;
+  var address = document.getElementById("address").value;
   $(".info-user-box").hide();
   $("#start-exam").hide();
   var info= "<h3>Kết quả</h3>" +
   "<p>Họ và tên: " + name + "</p>" +
-  "<p>Mã sinh viên: " + id + "</p>" +
-  "<p>Lớp: " + classroom + "</p>";
+  "<p>Ngày sinh: " + birthday + "</p>" +
+  "<p>CCCD: " + CCCD + "</p>" + 
+  "<p>Địa chỉ: " + address + "</p>";
   return info;
 }
 

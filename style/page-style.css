@@ -1,4 +1,4 @@
-@import url("https://use.fontawesome.com//releases/v6.5.1/css/all.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 
 * {
@@ -34,11 +34,16 @@ body {
   margin-right: 30px;
   align-items: center;
 }
+.logo{
+  display: flex;
+  margin-right: 10px;
+}
 
 .logo img {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 
@@ -49,55 +54,103 @@ body {
   border: none;
 }
 
-.info-user-box {
+.content {
   display: flex;
-  flex-direction: column;
-  padding: 10px 50px;
+  justify-content: center;
 }
 
-.info-user-box lable {
-  font-size: medium;
+.info-user-box {
+  margin-top: 50px;
 }
-.info-user-box input {
-  width: 50%;
-  height: 25px;
-  margin-top: 5px;
-  margin-bottom: 25px;
+
+.info-user {
+  width: 500px; 
+}
+
+.info-user label {
+  display: block; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-user input {
+  width: 100%; 
+  margin-bottom: 10px; 
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+.info-user-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info-user-button button {
+  width: 20%;
+  border-radius: 5px;
+  background-color: #EB455F;
+  color: white;
+  padding: 5px;
   border: none;
 }
 
-.content button {
+
+/* .content button {
   width: 100px;
   height: 30px;
   margin-left: 300px;
   background-color: azure;
-}
+} */
 
 .question-box {
   display: flex;
   background-color: white;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 100px;
   margin-right: 100px;
   padding-bottom: 20px;
 }
 
 .question-box .N1, .N2, .N3, .N4{
-  margin-left: 40px;
+  width: 100%;
+}
+.question-box group{
+  display: flex;
 }
 
-.question-box input[type="radio"]{
-  margin-left: 200px;
-  margin-top: 20px;
+.question {
+  box-shadow: 0 0 5px rgba(235, 69, 95, 0.5); 
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
-.question-box input[type="checkbox"]{
-  margin-left: 100px;
-  margin-top: 20px;
+
+
+.question-context{
+  margin-left: 20px;
 }
-.question-box button {
-  margin-top: 100px;
-  margin-left: 600px;
+
+.N1 input[type="radio"]{
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.N2 input[type="radio"]{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.N3 input[type="checkbox"]{
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.question-box button{
+  background-color: #40A2E3;
+  border-radius: 2px;
+  padding: 5px 8px;
 }
 
 .result-box {
