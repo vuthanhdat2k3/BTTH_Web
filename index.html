@@ -4,21 +4,363 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thi trắc nghiệm</title>
-  <link rel="stylesheet" href="style/index-style.css">
+  <link rel="stylesheet" href="page-style.css">
 </head>
 <body>
   <div class="wrap-header">
     <div class="form-left">
       <div class="logo">
-        <img src="asset/logo.png" alt="">
+        <img src="../asset/logo.png" alt="">
       </div>
-      <h3>Hệ thống thi trực tuyến</h3>
+      <h3>Khảo sát trực tuyến</h3>
     </div>
     <div class="form-right">
-      <button onclick="goToLogin()">Đăng nhập</button>
     </div>
   </div>
+  <div class="content">
+    <div class="info-user-box">
+      <div class="info-user">
+        <h3>Nhập thông tin sinh viên</h3>
+        <label for="Fullname">Họ và tên:</label>
+        <input type="text" id="Fullname">
+        <label for="Birthday">Ngày tháng năm sinh:</label>
+        <input type="text" id="Birthday">
+        <label for="ID">CCCD:</label>
+        <input type="text" id="ID">
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address">
+        <div class="info-user-button"><button id="start-exam" onclick="startExam()">Bắt đầu</button></div>
+      </div>
+    </div>
+    
+    <div class="question-box" id="exam">
+      <div class="N1">
+        <div class="group"><h4>Chọn đúng hoặc sai:</h4></div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 1: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 2: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 3: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 4: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 5: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 6: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 7: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 8: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 9: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 10: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question1" value="true">Đúng
+            <input type="radio" name="question1" value="false">Sai</div>
+        </div>
+      </div>
+      <div class="N2">
+        <div class="group"><h4>Chọn 1 đáp án đúng nhất:</h4></div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 11: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 12: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 13: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 14: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 15: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 16: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 17: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 18: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 19: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 20: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 21: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 22: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 23: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 24: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 25: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 26: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 27: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 28: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 29: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 30: </p></div>
+          <div class="question-context">
+            <input type="radio" name="question11" value="true">A.
+            <input type="radio" name="question11" value="false">B.
+            <input type="radio" name="question11" value="false">C.
+            <input type="radio" name="question11" value="false">D.</div>
+        </div>
+
+      </div>
+      <div class="N3">
+        <div class="group">
+          <h4>Chọn các đáp án đúng:</h4>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 31: </p></div>
+          <div class="question-context">
+            <input type="checkbox" name="question31" value="true">Đáp án A
+            <input type="checkbox" name="question31" value="true">Đáp án B
+            <input type="checkbox" name="question31" value="false">Đáp án C
+            <input type="checkbox" name="question31" value="false">Đáp án D
+            <input type="checkbox" name="question31" value="false">Đáp án E</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 32: </p></div>
+          <div class="question-context">
+            <input type="checkbox" name="question31" value="true">Đáp án A
+            <input type="checkbox" name="question31" value="true">Đáp án B
+            <input type="checkbox" name="question31" value="false">Đáp án C
+            <input type="checkbox" name="question31" value="false">Đáp án D
+            <input type="checkbox" name="question31" value="false">Đáp án E</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 33: </p></div>
+          <div class="question-context">
+            <input type="checkbox" name="question31" value="true">Đáp án A
+            <input type="checkbox" name="question31" value="true">Đáp án B
+            <input type="checkbox" name="question31" value="false">Đáp án C
+            <input type="checkbox" name="question31" value="false">Đáp án D
+            <input type="checkbox" name="question31" value="false">Đáp án E</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 34: </p></div>
+          <div class="question-context">
+            <input type="checkbox" name="question31" value="true">Đáp án A
+            <input type="checkbox" name="question31" value="true">Đáp án B
+            <input type="checkbox" name="question31" value="false">Đáp án C
+            <input type="checkbox" name="question31" value="false">Đáp án D
+            <input type="checkbox" name="question31" value="false">Đáp án E</div>
+        </div>
+        <div class="question">
+          <div class="question-heading"><p>Câu hỏi 35: </p></div>
+          <div class="question-context">
+            <input type="checkbox" name="question31" value="true">Đáp án A
+            <input type="checkbox" name="question31" value="true">Đáp án B
+            <input type="checkbox" name="question31" value="false">Đáp án C
+            <input type="checkbox" name="question31" value="false">Đáp án D
+            <input type="checkbox" name="question31" value="false">Đáp án E</div>
+        </div>
+
+      </div>
+      <div class="N4">
+        <div class="group">
+          <h4>Trả lời tự luận</h4>
+        </div>
+        <div class="question">
+          <div class="question-heading">
+            <p>Câu hỏi 36: What is your name?</p>
+            <h5>Trả lời:</h5>
+          </div>
+          <div class="question-context"><textarea name="question36" rows="4" cols="50"></textarea></div>
+        </div>
+        <div class="question">
+          <div class="question-heading">
+            <p>Câu hỏi 37: What is your name?</p>
+            <h5>Trả lời:</h5>
+          </div>
+          <div class="question-context"><textarea name="question36" rows="4" cols="50"></textarea></div>
+        </div>
+        <div class="question">
+          <div class="question-heading">
+            <p>Câu hỏi 38: What is your name?</p>
+            <h5>Trả lời:</h5>
+          </div>
+          <div class="question-context"><textarea name="question36" rows="4" cols="50"></textarea></div>
+        </div>
+        <div class="question">
+          <div class="question-heading">
+            <p>Câu hỏi 39: What is your name?</p>
+            <h5>Trả lời:</h5>
+          </div>
+          <div class="question-context"><textarea name="question36" rows="4" cols="50"></textarea></div>
+        </div>
+        <div class="question">
+          <div class="question-heading">
+            <p>Câu hỏi 40: What is your name?</p>
+            <h5>Trả lời:</h5>
+          </div>
+          <div class="question-context"><textarea name="question36" rows="4" cols="50"></textarea></div>
+        </div>
+      </div>
+      <button onclick="submitResult()">Nộp bài</button>
+    </div>
+  </div>
+  <div class="result-box">
+    <div class="result" id="result"></div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script/go_to_login.js"></script>
+  <script src="../script/logout.js"></script>
+  <script src="page-script.js"></script>
 </body>
 </html>
