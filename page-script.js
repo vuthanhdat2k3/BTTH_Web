@@ -95,4 +95,5 @@ function submitResult(){
       textArea.value = selected[i];
     }
   }
+  window.scrollTo(0, 0);
 }
