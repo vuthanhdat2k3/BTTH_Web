@@ -65,13 +65,16 @@ body {
 
 .info-user-box {
   margin-top: 50px;
+  margin-left: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   background-color: white;
 }
 
 .info-user {
   width: 500px;
-  margin: 20px 20px 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .info-user label {
@@ -163,7 +166,7 @@ body {
   margin-bottom: 20px;
 }
 
-.question textarea{
+ textarea{
   max-width: 90%;
 }
 
@@ -214,5 +217,30 @@ body {
 
   .result-heading-content {
     margin-left: 10px; /* Điều chỉnh khoảng cách trái cho phần kết quả */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info-user-box {
+    width: 90%; /* Giảm chiều rộng của info-user-box */
+    margin: 0 auto; /* Canh giữa */
+  }
+
+  .info-user {
+    width: 90%; /* Chiều rộng 100% để tự động thích ứng */
+    margin: 20px; /* Tăng khoảng cách giữa các phần tử bên trong */
+  }
+
+  .info-user input {
+    max-width: 100%; /* Sử dụng max-width thay vì width */
+    width: calc(100% - 16px); /* Đảm bảo input không vượt quá chiều rộng của info-user */
+  }
+
+  .info-user-button {
+    margin-top: 20px; /* Canh lề trên */
+  }
+
+  .info-user-button button {
+    max-width: 100%; /* Sử dụng max-width thay vì width */
   }
 }
